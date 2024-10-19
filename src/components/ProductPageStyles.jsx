@@ -52,7 +52,7 @@ export const ImageAndDetailsContainer = styled.div`
 
 export const ProductImage = styled.img`
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   border-radius: 4px;
   margin: 0 auto;
