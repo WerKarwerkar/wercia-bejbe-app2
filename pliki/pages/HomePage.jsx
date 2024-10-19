@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { CartContext } from "../components/CartContext";
 import SearchBar from "../components/SearchBar";
-
 import {
   ProductCard,
   ProductsGrid,
@@ -12,6 +11,7 @@ import {
   DiscountedPrice,
   ProductLink,
   ProductTitle,
+  MessageContainer,
 } from "../components/HomePageStyles";
 
 function HomePage() {
@@ -25,6 +25,7 @@ function HomePage() {
         setIsLoading(true);
         const response = await fetch("https://v2.api.noroff.dev/online-shop");
         const data = await response.json();
+
         setProducts(data.data);
       } catch (error) {
         setIsError(true);
@@ -37,11 +38,11 @@ function HomePage() {
   }, []);
 
   if (isLoading) {
-    return <div>Loading all the products......</div>;
+    return <MessageContainer>Loading all the products......</MessageContainer>;
   }
 
   if (isError) {
-    return <div>Error while fetching data</div>;
+    return <MessageContainer>Error while fetching data :(</MessageContainer>;
   }
 
   return (

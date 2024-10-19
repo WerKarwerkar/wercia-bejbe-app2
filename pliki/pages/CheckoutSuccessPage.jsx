@@ -18,9 +18,8 @@ function CheckoutSuccessPage() {
     <SuccessContainer>
       <SuccessTitle>Order Successful! 🎉</SuccessTitle>
       <SuccessText>Your order has been placed successfully.</SuccessText>
-      <SuccessLink to="/">Go back to the store</SuccessLink>
+      <SuccessLink to="/"> ⬅️ Go back to the store</SuccessLink>
     </SuccessContainer>
   );
 }
-
 export default CheckoutSuccessPage;

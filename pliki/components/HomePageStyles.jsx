@@ -1,6 +1,14 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+export const MessageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6da29f;
+  font-size: 16px;
+  font-weight: bold;
+`;
 export const ProductTitle = styled.h1`
   color: #6da29f;
   text-align: center;
@@ -22,6 +30,7 @@ export const ProductCard = styled.li`
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
+  background-color: #f6f6f3;
 `;
 
 export const ProductImage = styled.img`

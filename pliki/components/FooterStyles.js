@@ -42,7 +42,6 @@ export const NestedList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-  // white-space: nowrap;
 
   li {
     font-size: 12px;
